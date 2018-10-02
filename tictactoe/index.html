@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+<head>
+    <style>
+        th, td {
+            padding: 70px;
+            text-align: center;
+        }
+        .lborder{
+            border-left: 5px solid black;
+        }
+        .rborder{
+            border-right: 5px solid black;
+        }
+        .bborder{
+            border-bottom: 5px solid black;
+        }
+        .picture {
+            max-width: 500px;
+            margin: auto;
+    </style>
+</head>
+<body ng-app="tictactoe" ng-controller="myCtrl">
+<br>
+<br>
+<h1 align="center" style="color:dodgerblue;"> <span style="fontsize:large;"><i>WELCOME TO TIC TAC TOE GAME</i></span></h1>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<div class="picture">
+    <table style="width:150px">
+        <tr>
+            <td ng-click="onclick(0,$event)" class="bborder rborder"></td>
+            <td ng-click="onclick(1,$event)" class="bborder rborder"></td>
+            <td ng-click="onclick(2,$event)" class="bborder"></td>
+        </tr>
+        <tr>
+            <td ng-click="onclick(3,$event)" class="rborder bborder"></td>
+            <td ng-click="onclick(4,$event)" class="rborder bborder"></td>
+            <td ng-click="onclick(5,$event)" class="bborder"></td>
+        </tr>
+        <tr>
+            <td ng-click="onclick(6,$event)" class="rborder"></td>
+            <td ng-click="onclick(7,$event)" class="rborder"></td>
+            <td ng-click="onclick(8,$event)" class=""></td>
+        </tr>
+    </table>
+</div>
+</body>
+<script src="tictactoe.js"></script>
+</html>

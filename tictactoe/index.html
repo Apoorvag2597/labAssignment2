@@ -32,6 +32,7 @@
 <br>
 <br>
 <div class="picture">
+    <h2>{{winner}}</h2>
     <table style="width:150px">
         <tr>
             <td ng-click="onclick(0,$event)" class="bborder rborder"></td>
@@ -49,6 +50,7 @@
             <td ng-click="onclick(8,$event)" class=""></td>
         </tr>
     </table>
+    <button ng-click="reset()">Reset</button>
 </div>
 </body>
 <script src="tictactoe.js"></script>

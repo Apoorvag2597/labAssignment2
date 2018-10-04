@@ -1,11 +1,18 @@
 <!DOCTYPE html>
 <html>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+<link rel="stylesheet" href="css/styles.css">
 <head>
     <style>
         th, td {
             padding: 70px;
             text-align: center;
+
+
         }
         .lborder{
             border-left: 5px solid black;
@@ -19,6 +26,8 @@
         .picture {
             max-width: 500px;
             margin: auto;
+        }
+        td:hover {background-color:#f5f5f5;}
     </style>
 </head>
 <body ng-app="tictactoe" ng-controller="myCtrl">
@@ -28,11 +37,9 @@
 <br>
 <br>
 <br>
-<br>
-<br>
-<br>
+
 <div class="picture">
-    <h2>{{winner}}</h2>
+    <h3><b>{{winner}}</b></h3>
     <table style="width:150px">
         <tr>
             <td ng-click="onclick(0,$event)" class="bborder rborder"></td>
@@ -50,7 +57,13 @@
             <td ng-click="onclick(8,$event)" class=""></td>
         </tr>
     </table>
-    <button ng-click="reset()">Reset</button>
+    <div >
+        <br>
+        <br>
+        <br>
+        <br>
+        <y> <button class="btn btn-primary col-md-6 col-md-offset-2" ng-click="reset()">RESET</button></y>
+</div>
 </div>
 </body>
 <script src="tictactoe.js"></script>
